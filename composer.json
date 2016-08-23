@@ -41,6 +41,6 @@
     },
     "scripts": {
         "fix-cs": "./vendor/bin/php-cs-fixer fix -vvv",
-        "gen-docs": "/usr/bin/php /usr/local/bin/apigen generate --source /home/ivanpepelko/NetBeansProjects/wkp2p/src --destination /home/ivanpepelko/NetBeansProjects/wkp2p/doc --title wkp2p --charset UTF-8 --access-levels public --access-levels protected --php --tree"
+        "gen-docs": "/usr/bin/php /usr/local/bin/apigen generate --source /home/ivanpepelko/NetBeansProjects/wkp2p/src --destination /home/ivanpepelko/NetBeansProjects/wkp2p/docs --title wkp2p --charset UTF-8 --access-levels public --access-levels protected --php --tree"
     }
 }

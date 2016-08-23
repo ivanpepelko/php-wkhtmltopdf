@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+
+	<title>File functions.php | wkp2p</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-WkHtmlToPdf.html">
+						WkHtmlToPdf<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-WkHtmlToPdf.Options.html">
+						Options					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Throwable.html">Throwable</a></li>
+			</ul>
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html">WkHtmlToPdf\Options\GlobalOptionsTrait</a></li>
+				<li><a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html">WkHtmlToPdf\Options\HeaderFooterOptionsTrait</a></li>
+				<li><a href="class-WkHtmlToPdf.Options.OutlineOptionsTrait.html">WkHtmlToPdf\Options\OutlineOptionsTrait</a></li>
+				<li><a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html">WkHtmlToPdf\Options\PageOptionsTrait</a></li>
+				<li><a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html">WkHtmlToPdf\Options\TocOptionsTrait</a></li>
+			</ul>
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Exception.html">Exception</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-join_path.html">join_path</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Namespace</span>			</li>
+			<li>
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a href="#2"> 2: </a>
+</span><span id="3" class="l"><a href="#3"> 3: </a><span class="php-comment">/**
+</span></span><span id="4" class="l"><a href="#4"> 4: </a><span class="php-comment"> * Join path.
+</span></span><span id="5" class="l"><a href="#5"> 5: </a><span class="php-comment"> *
+</span></span><span id="6" class="l"><a href="#6"> 6: </a><span class="php-comment"> * @param string $args
+</span></span><span id="7" class="l"><a href="#7"> 7: </a><span class="php-comment"> *
+</span></span><span id="8" class="l"><a href="#8"> 8: </a><span class="php-comment"> * @return string
+</span></span><span id="9" class="l"><a href="#9"> 9: </a><span class="php-comment"> */</span>
+</span><span id="10" class="l"><a href="#10">10: </a><span class="php-keyword1">function</span> join_path(<span class="php-var">$args</span>)
+</span><span id="11" class="l"><a href="#11">11: </a>{
+</span><span id="12" class="l"><a href="#12">12: </a>    <span class="php-var">$args</span> = <span class="php-keyword2">func_get_args</span>();
+</span><span id="13" class="l"><a href="#13">13: </a>    <span class="php-var">$forwardSlash</span> = <span class="php-keyword2">reset</span>(<span class="php-var">$args</span>)[<span class="php-num">0</span>] === <span class="php-quote">'/'</span> ? <span class="php-quote">'/'</span> : <span class="php-quote">''</span>;
+</span><span id="14" class="l"><a href="#14">14: </a>
+</span><span id="15" class="l"><a href="#15">15: </a>    <span class="php-keyword1">return</span> <span class="php-var">$forwardSlash</span> . <span class="php-keyword2">implode</span>(DIRECTORY_SEPARATOR, <span class="php-keyword2">array_map</span>(<span class="php-keyword1">function</span> (<span class="php-var">$arg</span>) {
+</span><span id="16" class="l"><a href="#16">16: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">trim</span>(<span class="php-var">$arg</span>, <span class="php-quote">&quot; \t\n\r\0\x0b\/\\&quot;</span>);
+</span><span id="17" class="l"><a href="#17">17: </a>    }, <span class="php-var">$args</span>));
+</span><span id="18" class="l"><a href="#18">18: </a>}
+</span><span id="19" class="l"><a href="#19">19: </a></span></code></pre>
+
+	<div id="footer">
+		wkp2p API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?cd021bc814832c24a7cec5319ea03335bfba1caf"></script>
+<script src="elementlist.js?f61509f27e4ad6368716e77e062a21a7e2064d19"></script>
+</body>
+</html>

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class WkHtmlToPdf\WkHtmlToPdf | wkp2p</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-WkHtmlToPdf.html">
+						WkHtmlToPdf<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-WkHtmlToPdf.Options.html">
+						Options					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-WkHtmlToPdf.html" title="Summary of WkHtmlToPdf"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class WkHtmlToPdf</h1>
+
+
+	<div class="description">
+	<p>Description of Wkp2p.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>WkHtmlToPdf\WkHtmlToPdf</span></b>			
+			
+			 uses 
+					<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html"><span>WkHtmlToPdf\Options\GlobalOptionsTrait</span></a>, 
+			
+					<a href="class-WkHtmlToPdf.Options.OutlineOptionsTrait.html"><span>WkHtmlToPdf\Options\OutlineOptionsTrait</span></a>, 
+			
+					<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html"><span>WkHtmlToPdf\Options\PageOptionsTrait</span></a>, 
+			
+					<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html"><span>WkHtmlToPdf\Options\HeaderFooterOptionsTrait</span></a>, 
+			
+					<a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html"><span>WkHtmlToPdf\Options\TocOptionsTrait</span></a>
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-WkHtmlToPdf.html">WkHtmlToPdf</a><br>
+		
+
+				<b>Author:</b>
+				ivanpepelko<br>
+			<b>Located at</b> <a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#11-392" title="Go to source code">WkHtmlToPdf/WkHtmlToPdf.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#34-61" title="Go to source code">__construct</a>( <span>string <var>$wkhtml2pdf</var></span>, <span>string <var>$tmpDir</var> = <span class="php-quote">'/tmp'</span></span>, <span>boolean <var>$debug</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$wkhtml2pdf</var></dt>
+					<dd>Path to wkhtmltopdf binary</dd>
+					<dt><var>$tmpDir</var></dt>
+					<dd>Path to tmp dir</dd>
+					<dt><var>$debug</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Exception.html">Exception</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setInputPath" id="_setInputPath">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setInputPath">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#63-75" title="Go to source code">setInputPath</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			<p>Set input file path.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set input file path.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setInputHtml" id="_setInputHtml">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setInputHtml">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#77-94" title="Go to source code">setInputHtml</a>( <span>string <var>$html</var></span> )</code>
+
+		<div class="description short">
+			<p>Set input html.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set input html.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$html</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOutputPath" id="_setOutputPath">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOutputPath">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#96-108" title="Go to source code">setOutputPath</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			<p>Set output file path.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set output file path.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOutput" id="_getOutput">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOutput">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#110-122" title="Go to source code">getOutput</a>( )</code>
+
+		<div class="description short">
+			<p>Get pdf as string.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get pdf as string.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="useRecommendedOptions" id="_useRecommendedOptions">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_useRecommendedOptions">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#124-142" title="Go to source code">useRecommendedOptions</a>( )</code>
+
+		<div class="description short">
+			<p>PnP method to get you going ASAP. Sets margins to 6.3mm,
+viewport size to 800x1280, enables low quality and enables media-print if available.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>PnP method to get you going ASAP. Sets margins to 6.3mm,
+viewport size to 800x1280, enables low quality and enables media-print if available.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="convert" id="_convert">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_convert">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#144-216" title="Go to source code">convert</a>( )</code>
+
+		<div class="description short">
+			<p>Do conversion.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Do conversion.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Exception.html">Exception</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="enablePrefetch" id="_enablePrefetch">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_enablePrefetch">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#218-228" title="Go to source code">enablePrefetch</a>( )</code>
+
+		<div class="description short">
+			<p>Prefetch html and feed local file to wkhtmltopdf.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Prefetch html and feed local file to wkhtmltopdf.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="disablePrefetch" id="_disablePrefetch">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_disablePrefetch">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#230-240" title="Go to source code">disablePrefetch</a>( )</code>
+
+		<div class="description short">
+			<p>Disable html prefetching.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Disable html prefetching.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setArg" id="_setArg">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setArg">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#242-258" title="Go to source code">setArg</a>( <span>string <var>$arg</var></span>, <span>mixed <var>$val</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Set argument (works only when constructor param $debug == true).
+All pdf generation related args have their dedicated method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set argument (works only when constructor param $debug == true).
+All pdf generation related args have their dedicated method.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arg</var></dt>
+					<dd></dd>
+					<dt><var>$val</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unsetArg" id="_unsetArg">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unsetArg">#</a>
+		<code><a href="source-class-WkHtmlToPdf.WkHtmlToPdf.html#260-275" title="Go to source code">unsetArg</a>( <span>string <var>$arg</var></span> )</code>
+
+		<div class="description short">
+			<p>Unset argument (works only when constructor param $debug == true).
+All pdf generation related args have their dedicated method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Unset argument (works only when constructor param $debug == true).
+All pdf generation related args have their dedicated method.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arg</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-WkHtmlToPdf.WkHtmlToPdf.html">WkHtmlToPdf\WkHtmlToPdf</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary used">
+	<caption>Methods used from <a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#methods">WkHtmlToPdf\Options\GlobalOptionsTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_disableCollate">disableCollate()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_disableGrayscale">disableGrayscale()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_disableLowQuality">disableLowQuality()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_disablePdfCompression">disablePdfCompression()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_disableXserver">disableXserver()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_enableCollate">enableCollate()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_enableGrayscale">enableGrayscale()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_enableLowQuality">enableLowQuality()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_enablePdfCompression">enablePdfCompression()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_enableXserver">enableXserver()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setCookieJar">setCookieJar()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setCopies">setCopies()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setDocumentTitle">setDocumentTitle()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setDpi">setDpi()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setImageDpi">setImageDpi()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setImageQuality">setImageQuality()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setMarginBottom">setMarginBottom()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setMarginLeft">setMarginLeft()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setMarginRight">setMarginRight()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setMarginTop">setMarginTop()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setMargins">setMargins()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setMarginsAll">setMarginsAll()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setOrientation">setOrientation()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setPageHeight">setPageHeight()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setPageSize">setPageSize()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setPageWidth">setPageWidth()</a>, 
+			<a href="class-WkHtmlToPdf.Options.GlobalOptionsTrait.html#_setTitle">setTitle()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-WkHtmlToPdf.Options.OutlineOptionsTrait.html#methods">WkHtmlToPdf\Options\OutlineOptionsTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-WkHtmlToPdf.Options.OutlineOptionsTrait.html#_disableOutline">disableOutline()</a>, 
+			<a href="class-WkHtmlToPdf.Options.OutlineOptionsTrait.html#_enableOutline">enableOutline()</a>, 
+			<a href="class-WkHtmlToPdf.Options.OutlineOptionsTrait.html#_setDumpOutline">setDumpOutline()</a>, 
+			<a href="class-WkHtmlToPdf.Options.OutlineOptionsTrait.html#_setOutline">setOutline()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#methods">WkHtmlToPdf\Options\PageOptionsTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addAllowedPath">addAllowedPath()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addAllowedPaths">addAllowedPaths()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addCookie">addCookie()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addCookies">addCookies()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addCustomHttpHeader">addCustomHttpHeader()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addCustomHttpHeaders">addCustomHttpHeaders()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addDefaultHeader">addDefaultHeader()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addHttpPostField">addHttpPostField()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addHttpPostFields">addHttpPostFields()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addHttpPostFile">addHttpPostFile()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addHttpPostFiles">addHttpPostFiles()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addScript">addScript()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_addScripts">addScripts()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableBackground">disableBackground()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableCustomHttpHeaderPropagination">disableCustomHttpHeaderPropagination()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableExternalLinks">disableExternalLinks()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableForms">disableForms()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableImages">disableImages()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableInternalLinks">disableInternalLinks()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableJavascript">disableJavascript()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableJavascriptDebugging">disableJavascriptDebugging()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableLocalFileAccess">disableLocalFileAccess()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disablePlugins">disablePlugins()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disablePrintMediaType">disablePrintMediaType()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableSlowScripts">disableSlowScripts()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableSmartShrinking">disableSmartShrinking()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_disableTocBackLinks">disableTocBackLinks()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableBackground">enableBackground()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableCustomHttpHeaderPropagination">enableCustomHttpHeaderPropagination()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableExternalLinks">enableExternalLinks()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableForms">enableForms()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableImages">enableImages()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableInternalLinks">enableInternalLinks()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableJavascript">enableJavascript()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableJavascriptDebugging">enableJavascriptDebugging()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableLocalFileAccess">enableLocalFileAccess()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enablePlugins">enablePlugins()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enablePrintMediaType">enablePrintMediaType()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableSlowScripts">enableSlowScripts()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableSmartShrinking">enableSmartShrinking()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_enableTocBackLinks">enableTocBackLinks()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_excludeFromOutline">excludeFromOutline()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_includeInOutline">includeInOutline()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_keepRelativeLinks">keepRelativeLinks()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_resolveRelativeLinks">resolveRelativeLinks()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setBypassProxy">setBypassProxy()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setCacheDir">setCacheDir()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setCheckboxCheckedSvg">setCheckboxCheckedSvg()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setCheckboxUncheckedSvg">setCheckboxUncheckedSvg()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setEncoding">setEncoding()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setHttpAuthPassword">setHttpAuthPassword()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setHttpAuthUsername">setHttpAuthUsername()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setJavascriptDelay">setJavascriptDelay()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setLoadErrorHandling">setLoadErrorHandling()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setLoadMediaErrorHandling">setLoadMediaErrorHandling()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setMinimumFontSize">setMinimumFontSize()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setPageOffset">setPageOffset()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setProxy">setProxy()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setRadiobuttonCheckedSvg">setRadiobuttonCheckedSvg()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setRadiobuttonUncheckedSvg">setRadiobuttonUncheckedSvg()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setUserStyleSheet">setUserStyleSheet()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setViewportSize">setViewportSize()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_setZoom">setZoom()</a>, 
+			<a href="class-WkHtmlToPdf.Options.PageOptionsTrait.html#_waitWindowStatus">waitWindowStatus()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#methods">WkHtmlToPdf\Options\HeaderFooterOptionsTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_addHeaderFooterVar">addHeaderFooterVar()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_addHeaderFooterVars">addHeaderFooterVars()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_disableFooterLine">disableFooterLine()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_disableHeaderLine">disableHeaderLine()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_enableFooterLine">enableFooterLine()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_enableHeaderLine">enableHeaderLine()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setFooterCenterText">setFooterCenterText()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setFooterFontName">setFooterFontName()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setFooterFontSize">setFooterFontSize()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setFooterHtml">setFooterHtml()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setFooterHtmlPath">setFooterHtmlPath()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setFooterLeftText">setFooterLeftText()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setFooterRightText">setFooterRightText()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setFooterSpacing">setFooterSpacing()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setHeaderCenterText">setHeaderCenterText()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setHeaderFontName">setHeaderFontName()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setHeaderFontSize">setHeaderFontSize()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setHeaderHtml">setHeaderHtml()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setHeaderHtmlPath">setHeaderHtmlPath()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setHeaderLeftText">setHeaderLeftText()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setHeaderRightText">setHeaderRightText()</a>, 
+			<a href="class-WkHtmlToPdf.Options.HeaderFooterOptionsTrait.html#_setHeaderSpacing">setHeaderSpacing()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary used">
+	<caption>Methods used from <a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html#methods">WkHtmlToPdf\Options\TocOptionsTrait</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html#_disableTocDottedLines">disableTocDottedLines()</a>, 
+			<a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html#_disableTocLinks">disableTocLinks()</a>, 
+			<a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html#_enableTocDottedLines">enableTocDottedLines()</a>, 
+			<a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html#_enableTocLinks">enableTocLinks()</a>, 
+			<a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html#_setTocHeaderText">setTocHeaderText()</a>, 
+			<a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html#_setTocLevelIndentation">setTocLevelIndentation()</a>, 
+			<a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html#_setTocTextSizeShrinking">setTocTextSizeShrinking()</a>, 
+			<a href="class-WkHtmlToPdf.Options.TocOptionsTrait.html#_setTocXslStyleSheet">setTocXslStyleSheet()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		wkp2p API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
