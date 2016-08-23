@@ -57,6 +57,8 @@ The first parameter passed to constructor is path to wkhtmltopdf binary. I recom
 
 
 ## Other stuff
+[Full docs](https://ivanpepelko.github.io/php-wkhtmltopdf/)
+
 ### Headers & Footers
 ```php
 <?php
