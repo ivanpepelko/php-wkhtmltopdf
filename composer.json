@@ -1,0 +1,46 @@
+{
+    "name": "ivanpepelko/php-wkhtmltopdf",
+    "description": "wkhtmltopdf php bindings",
+    "keywords": [
+        "pdf",
+        "wkhtmltopdf"
+    ],
+    "require": {
+        "php": "^5.4 | ^7",
+        "symfony/process": "^3.1",
+        "guzzlehttp/guzzle": "^6.2",
+        "symfony/dom-crawler": "^3.1",
+        "symfony/css-selector": "^3.1"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.1",
+        "friendsofphp/php-cs-fixer": "^1.12"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Pepelko",
+            "email": "ivan.pepelko@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "ivan.pepelko@gmail.com"
+    },
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "WkHtmlToPdf\\": "src/WkHtmlToPdf/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "suggest": {
+        "h4cc/wkhtmltopdf-amd64": "Convert html to pdf using webkit (qtwebkit). Static linked linux binary for amd64 systems.",
+        "h4cc/wkhtmltopdf-i386": "Convert html to pdf using webkit (qtwebkit). Static linked linux binary for i386 systems."
+    },
+    "scripts": {
+        "fix-cs": "./vendor/bin/php-cs-fixer fix -vvv",
+        "gen-docs": "/usr/bin/php /usr/local/bin/apigen generate --source /home/ivanpepelko/NetBeansProjects/wkp2p/src --destination /home/ivanpepelko/NetBeansProjects/wkp2p/doc --title wkp2p --charset UTF-8 --access-levels public --access-levels protected --php --tree"
+    }
+}
